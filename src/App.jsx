@@ -1,9 +1,14 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+
 import './App.css'
 
 const App = () => {
+
+
+
   const form = useRef();
+
   const [formData, setFormData] = useState({
     user_name: "",
     user_surname: "",
@@ -46,6 +51,7 @@ const App = () => {
   };
 
   return (
+    <>
     <form ref={form} onSubmit={sendEmail} >
       <div className="form_group">
         <div className="input_box">
@@ -76,7 +82,10 @@ const App = () => {
       </div>
       
       <button type="submit"  >  Send </button>
-    </form>
+    </form> 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30119.037429088534!2d77.1345432637248!3d19.33102673967652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd032f3923a4eff%3A0x76ff1bee28c5fe21!2sBasmat%2C%20Maharashtra%20431512!5e0!3m2!1sen!2sin!4v1738055262640!5m2!1sen!2sin" width="" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+    </>
+
   );
 };
 
