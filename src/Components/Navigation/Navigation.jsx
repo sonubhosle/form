@@ -26,26 +26,7 @@ const Navigation = () => {
   return (
     <header className={`navbar ${scrolling ? 'scrolled' : ''}`}>
     <div className="logo">Logo</div>
-    <nav className="nav-menu">
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-    <div className="search-profile">
-      <input type="text" placeholder="Search..." />
-      <div className="profile" onClick={toggleProfileMenu}>
-        Profile
-        <div className={`dropdown ${isProfileOpen ? 'open' : ''}`}>
-          <ul>
-            <li>Settings</li>
-            <li>Log Out</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+      
   </header>
 
   )
