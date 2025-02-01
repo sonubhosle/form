@@ -1,67 +1,64 @@
-/* .banner_section{
+ .banner_section{
     width: 100%;
     position: relative;
     height: 400px;
-    background-color: blue;
-}
-
-.banner_section img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
     display: flex;
     align-items: center;
-}
-
-.banner_section .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    padding: 60px;
-    display: flex;
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
-}
 
-.banner_section .overlay h1{
+}
+.banner_section  h1{
     color: #fff;
     font-size: 45px;
     line-height: 50px;
     display: flex;
     align-items: center;
+    font-weight: 900;
     flex-direction: column;
 
 }
 
-.banner_section .overlay  h1 span{
+.banner_section  h1 span{
     color: rgb(255, 230, 0);
 }
 
-.banner_section .overlay p{
+.banner_section  p{
     color: #fff;
     margin: 20px 0px 20px 0px;
     text-align: center;
+    width: 55%;
 }
 
-.banner_section .overlay .apply_btn{
-     padding: 10px 20px;
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+.banner_section .button {
+    width: fit-content;
     display: flex;
-    align-items: center;
-    border-radius: 4px;
-    background-color: #DE3163;
-    color: #fff;
-    font-weight: 500;
-    border-radius: 20px;
+    padding: 8px 20px;
     cursor: pointer;
-} */
-
-
-
-.width{
-    width: 300px;
-    height: 400px;
-    box-shadow: none;
-    object-fit: contain;
-}
+    gap: 0.4rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+    background: linear-gradient(15deg, #880088, #aa2068, #cc3f47, #de6f3d, #f09f33, #de6f3d, #cc3f47, #aa2068, #880088) no-repeat;
+    background-size: 300%;
+    color: #fff;
+    border: none;
+    background-position: left center;
+    box-shadow: 0 30px 10px -20px rgba(0,0,0,.2);
+    animation: gradientAnimation 3s infinite linear;
+    align-items: center;
+  }
+  
+.banner_section .button:hover {
+    animation: gradientAnimation 1.5s infinite linear;
+  }
+  
+  
