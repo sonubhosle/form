@@ -1,0 +1,39 @@
+.button_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    width: 60%;
+    margin: 30px auto;
+    gap: 20px;
+}
+
+.button_grid a{
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 20px;
+    box-shadow: rgba(0, 128, 128, 0.555) 5px 5px 10px 0px;
+}
+
+.grid_box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+    position: relative;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.grid_box .grid_card{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: rgba(0, 8, 8, 0.055) 5px 5px 10px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 6px;
+}

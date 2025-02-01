@@ -1,0 +1,14 @@
+.certifications {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 30px;
+    justify-content: center;
+
+}
+
+.certifications img {
+    width: 50%;
+}
