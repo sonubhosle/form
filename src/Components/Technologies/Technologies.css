@@ -1,0 +1,38 @@
+.technologies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    position: relative;
+    gap: 20px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.technologies .tech_card {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: rgba(0, 8, 8, 0.055) 5px 5px 10px 0px;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.technologies .tech_card:hover{
+    box-shadow: rgba(0, 8, 8, 0.13) 5px 5px 10px 0px;
+
+}
+
+
+.technologies .tech_card img{
+    width: 60px;
+    height: 60px;
+}
+
+.technologies .tech_card  .name{
+    color: #000;
+    font-weight: 500;
+    margin-top: 7px;
+}
