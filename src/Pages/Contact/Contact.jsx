@@ -48,39 +48,40 @@ const Contact = () => {
 
 
   return (
-   <div className="contact-form">
-       <form ref={form} onSubmit={sendEmail} >
-      <div className="form_group">
-        <div className="input_box">
-          <div className="name">Name</div>
-          <input type="text" name="user_name" id="user_name" placeholder="Enter your name" value={formData.user_name} onChange={handleChange} required />
+    <div className="contact-form">
+      <form ref={form} onSubmit={sendEmail} >
+        <h2>Get In Touch</h2>
+        <div className="form_group">
+          <div className="input_box">
+            <div className="name">Name</div>
+            <input type="text" name="user_name" id="user_name" placeholder="Enter your name" value={formData.user_name} onChange={handleChange} required />
+          </div>
+          <div className="input_box">
+            <div className="name">Surname</div>
+            <input type="text" name="user_surname" id="user_surname" placeholder="Enter your Surname" value={formData.user_surname} onChange={handleChange} required />
+          </div>
         </div>
-        <div className="input_box">
-          <div className="name">Surname</div>
-          <input type="text" name="user_surname" id="user_surname" placeholder="Enter your Surname" value={formData.user_surname} onChange={handleChange} required />
-        </div>
-      </div>
-      <div className="form_group">
-        <div className="input_box">
-          <div className="name">Email</div>
-          <input type="email" name="user_email" id="user_email" placeholder="Enter your email" value={formData.user_email} onChange={handleChange} required />
-        </div>
-        <div className="input_box">
-          <div className="name">Mobile</div>
-          <input type="number" name="user_number" id="user_number" placeholder="Enter your Number" value={formData.user_number} onChange={handleChange} required />
+        <div className="form_group">
+          <div className="input_box">
+            <div className="name">Email</div>
+            <input type="email" name="user_email" id="user_email" placeholder="Enter your email" value={formData.user_email} onChange={handleChange} required />
+          </div>
+          <div className="input_box">
+            <div className="name">Mobile</div>
+            <input type="number" name="user_number" id="user_number" placeholder="Enter your Number" value={formData.user_number} onChange={handleChange} required />
 
+          </div>
         </div>
-      </div>
-      <div className="form_group">
-        <div className="input_box">
-          <div className="name">Message</div>
-          <textarea name="user_message" id="user_message" placeholder="Write your message" value={formData.user_message} onChange={handleChange} required rows="5" ></textarea>
+        <div className="form_group">
+          <div className="input_box">
+            <div className="name">Message</div>
+            <textarea name="user_message" id="user_message" placeholder="Write your message" value={formData.user_message} onChange={handleChange} required rows="5" ></textarea>
+          </div>
         </div>
-      </div>
 
-      <button type="submit"  >  Send </button>
-    </form>
-   </div>
+        <button type="submit"  >  Send </button>
+      </form>
+    </div>
   )
 }
 

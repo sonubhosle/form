@@ -6,6 +6,7 @@ import Information from '../../Components/Information/Information'
 import Certifications from '../../Components/Certifications/Certifications'
 import Stories from '../../Components/Stories/Stories'
 import Technologies from '../../Components/Technologies/Technologies'
+import Questions from '../../Components/Questions/Questions'
 const Home = () => {
   return (
     <div className='home_section'>
@@ -19,6 +20,7 @@ const Home = () => {
       <Heading heading={'Technologies We Use'} subtitle={"We leverage modern tools and technologies to deliver high-quality projects."} />
          <Technologies/>
       <Heading heading={'Frequently Asked Questions'} />
+      <Questions />
 
     </div>
   )

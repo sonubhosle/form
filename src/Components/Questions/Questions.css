@@ -1,0 +1,34 @@
+.width {
+    background-color: #fff;
+    width: 70%;
+    margin: 30px auto;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #dbdbdb;
+
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.faq-answer {
+    overflow: hidden;
+}
+
+.faq-answer p {
+    color: #555;
+    font-size: 1rem;
+    margin: 0;
+    padding: 10px;
+}

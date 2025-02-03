@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  background: linear-gradient(135deg, #2575fc, hsl(269, 85%, 43%));
   transition: background 0.3s linear, width 0.3s linear,top 0.3s linear,border-radius 0.3s linear;
   width: 100%;
   position: sticky;
