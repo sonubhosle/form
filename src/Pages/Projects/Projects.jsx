@@ -72,8 +72,8 @@ const Projects = () => {
           }
          </div>
          <Heading heading={'Got a Project in Mind?'} subtitle={'Let us help you achieve your goals. Reach out for customized solutions that align with your vision.'} />
-         <div className="button">
-          <Link></Link>
+         <div className="btn_start">
+          <Link>Get Started</Link>
          </div>
     </div>
   )
