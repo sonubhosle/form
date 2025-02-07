@@ -26,3 +26,34 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+
+
+.btn_start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.btn_start a {
+    background: linear-gradient(135deg, #2575fc, hsl(269, 85%, 43%));
+    background-size: 200% 200%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 8px 20px;
+    border-radius: 3px;
+    animation: colorShift 4s ease infinite;
+}
+
+@keyframes colorShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

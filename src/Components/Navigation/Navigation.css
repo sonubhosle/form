@@ -3,8 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(135deg, #2575fc, hsl(269, 85%, 43%));
-  transition: background 0.3s linear, width 0.3s linear,top 0.3s linear,border-radius 0.3s linear;
+   background-color: #fff;
+  transition:  width 0.3s linear,top 0.3s linear,border-radius 0.3s linear;
   width: 100%;
   position: sticky;
   top: 0px;
@@ -15,18 +15,43 @@
 
 }
 
-.navbar.scrolled {
-  background:linear-gradient(135deg, #6a11cb, #2575fc);
-}
+
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
+ display: flex;
+ align-items: center;
+ gap: 10px;
+}
+
+.logo .icon{
+  display: flex;
+  align-items: center;
+}
+
+.details{
+  line-height: 23px;
+}
+
+
+
+.details .name{
+  color: #2D336B;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.details  .slogan{
+  color: #3A7D44;
+  font-size: 12px;
 }
 
 .meuns a{
-  color: #fff;
+  color: #2D336B;
+  transition: 0.5s ease;
+}
+
+.meuns a:hover{
+  color: #aa2068;
 }
 @keyframes gradientAnimation {
   0% { background-position: 0% 50%; }

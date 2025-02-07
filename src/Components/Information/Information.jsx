@@ -1,62 +1,61 @@
 import React, { useState, useEffect } from "react";
-import './Information.css'
+import './Information.css';
+import { information } from "./info";
+
 const Information = () => {
-      const menus = [
-        {
-          id: "Real Projects",
-          label: "Real Projects",
-          title: "Welcome to Menu 1",
-          description: "This is a detailed description for Menu 1. It includes more text and even an image.",
-          image: "https://via.placeholder.com/300x150/ff9999/fff?text=Menu+1",
-          color: "#ff9999",
-        },
-        {
-          id: "Experienced Mentors",
-          label: "Experienced Mentors",
-          title: "Explore Menu 2",
-          description: "Here is some more content for Menu 2. This section can have a longer paragraph or list.",
-          image: "https://via.placeholder.com/300x150/99ccff/fff?text=Menu+2",
-          color: "#99ccff",
-        },
-        {
-          id: "Flexible Shedule",
-          label: "Flexible Shedule",
-          title: "Discover Menu 3",
-          description: "Menu 3 contains even more content. Feel free to add as much detail as you need!",
-          image: "https://via.placeholder.com/300x150/99ff99/fff?text=Menu+3",
-          color: "#99ff99",
-        },
-      ];
-    
-      const [activeIndex, setActiveIndex] = useState(0);
-    
-      useEffect(() => {
-        const interval = setInterval(() => {
-          setActiveIndex((prevIndex) => (prevIndex + 1) % menus.length);
-        }, 3000); // Change every 3 seconds
-    
-        return () => clearInterval(interval); // Cleanup on unmount
-      }, []);
-    
-      return (
-        <div className="menu-container">
-          <div className="menu-buttons">
-            {menus.map((menu, index) => (
-          <div key={menu.id}  onClick={() => setActiveIndex(index)} className={`menu-button ${activeIndex === index ? "active" : ""}`} >
-          {menu.label}
-        </div>
-            ))}
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % information.length);
+    }, 3000); // Change every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
+
+  return (
+    <div className="menu-container">
+      <div className="menu-buttons">
+        {information.map((menu, index) => (
+          <div
+            key={menu.id}
+            onClick={() => setActiveIndex(index)}
+            className={`menu-button ${activeIndex === index ? "active" : ""}`}
+          >
+            {menu.label}
           </div>
-    
-          <div className="content">
-            <h2>{menus[activeIndex].title}</h2>
-            <p>{menus[activeIndex].description}</p>
-            <img src={menus[activeIndex].image} alt={menus[activeIndex].title} />
-          </div>
+        ))}
+      </div>
+
+      <div className="content">
+        <div className="section_heading">
+          <h2>{information[activeIndex].label}</h2>
+          <p>{information[activeIndex].desc}</p>
         </div>
-      );
-    };
-    
-    
-    
+
+        {/* Displaying info_array */}
+        <h3>{information[activeIndex].sub_heading}</h3>
+        <div className="grid_one">
+          {information[activeIndex].info_array.map((item, index) => (
+            <div className="card_one" key={index}>{item.value}</div>
+          ))}
+        </div>
+
+        {/* Displaying details_array */}
+        <h3>{information[activeIndex].content_heading}</h3>
+        <div  className="grid_two">
+          {information[activeIndex].details_array.map((detail, index) => (
+            <div className="card_two" key={index}>
+              <h4>{detail.title}</h4>
+              <span>{detail.info}</span>
+            </div>
+          ))}
+        </div>
+
+        <p>{information[activeIndex].para}</p>
+      </div>
+    </div>
+  );
+};
+
 export default Information;
