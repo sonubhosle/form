@@ -7,32 +7,32 @@ const button_data = [
   {
     "id": 1,
     "title": "Full Stack internship - Java",
-    "path": ""
+    "path": "https://forms.gle/QyntxmLeqeQ3Mn869"
   },
   {
     "id": 1,
     "title": "Java Internship",
-    "path": ""
+    "path": "https://forms.gle/QyntxmLeqeQ3Mn869"
   },
   {
     "id": 1,
     "title": "Web Developement internship",
-    "path": ""
+    "path": "https://forms.gle/QyntxmLeqeQ3Mn869"
   },
   {
     "id": 1,
     "title": "Paython Internship",
-    "path": ""
+    "path": "https://forms.gle/QyntxmLeqeQ3Mn869"
   },
   {
     "id": 1,
     "title": "Data Science Internship",
-    "path": ""
+    "path": "https://forms.gle/QyntxmLeqeQ3Mn869"
   },
   {
     "id": 1,
     "title": "React Js Internship",
-    "path": ""
+    "path": "https://forms.gle/QyntxmLeqeQ3Mn869"
   },
 ]
 
