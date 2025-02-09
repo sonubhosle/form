@@ -1,6 +1,6 @@
 .width {
     background-color: #fff;
-    width: 70%;
+    width: 100%;
     margin: 30px auto;
     border: 1px solid #dbdbdb;
     border-radius: 4px;
@@ -8,7 +8,7 @@
 
 .faq-item {
     border-bottom: 1px solid #dbdbdb;
-
+    width: 100%;
 }
 
 .faq-question {
@@ -19,6 +19,7 @@
     font-size: 17px;
     cursor: pointer;
     transition: all 0.3s ease;
+    width: 100%;
 }
 
 

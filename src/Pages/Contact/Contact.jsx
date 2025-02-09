@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react'
 import './Contact.css'
+import  emailjs from "emailjs-com"
+
 const Contact = () => {
 
 
@@ -26,7 +28,7 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_aqy77yc",
+        "service_4jmjz0g",
         "template_qe9vdqj",
         form.current,
         "eIJjUwYH9psQBhPrj"
@@ -81,6 +83,7 @@ const Contact = () => {
 
         <button type="submit"  >  Send </button>
       </form>
+   
     </div>
   )
 }

@@ -7,6 +7,7 @@ import Certifications from '../../Components/Certifications/Certifications'
 import Stories from '../../Components/Stories/Stories'
 import Technologies from '../../Components/Technologies/Technologies'
 import Questions from '../../Components/Questions/Questions'
+import Dev from '../../Components/Dev/Dev'
 const Home = () => {
   return (
     <div className='home_section'>
@@ -21,7 +22,8 @@ const Home = () => {
          <Technologies/>
       <Heading heading={'Frequently Asked Questions'} />
       <Questions />
-
+      <Heading heading={'Custom Web and Mobile Application Development'}  subtitle={'We specialize in creating any type of web and mobile applications at market-competitive prices. From dynamic websites to feature-rich mobile apps, our team can bring your vision to life with high-quality solutions tailored to your needs.'}/>
+       <Dev/>
     </div>
   )
 }

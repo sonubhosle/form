@@ -1,6 +1,7 @@
 .menu-container {
   text-align: center;
   padding: 20px;
+  
 }
 
 .menu-buttons {
@@ -39,6 +40,7 @@
   box-shadow: rgba(0, 0, 0, 0.274) 0px 0px 10px 0px;
   padding: 20px;
   border-radius: 4px;
+  background-color: #fff;
 }
 
 .content .section_heading {
@@ -82,6 +84,7 @@
   width: 100%;
   padding: 10px ;
   border-radius: 4px;
+  background-color: #fff;
 }
 
 .content .grid_two{

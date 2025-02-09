@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './Navigation.css'
 import { Link } from 'react-router-dom';
-import { TbBulb } from "react-icons/tb";
+import { PiStudentBold } from "react-icons/pi";
 
-import { FaRegHandPointRight } from "react-icons/fa";
+import { FaRegHandPointLeft } from "react-icons/fa";
 
 const Navigation = () => {
 
@@ -31,9 +31,9 @@ const Navigation = () => {
   return (
     <header className={`navbar ${scrolling ? 'scrolled' : ''}`}>
       <Link className="logo">
-      <div className="icon"><TbBulb color='#f1ce32' size={50} /></div>
+      <div className="icon"><PiStudentBold color='#2D336B' size={50} /></div>
       <div className="details">
-        <div className="name">Sky Bricks</div>
+        <div className="name">SKY BRICKS</div>
         <div className="slogan">Think Develop Achieve</div>
       </div>
       </Link>
@@ -42,9 +42,10 @@ const Navigation = () => {
         <Link to='/'>Home</Link>
         <Link to='/about'>About</Link>
         <Link to='/contact'>Contact</Link>
+        <Link to="/pricing" className='color'> Pricing</Link>
         <Link to='/career'>Career</Link>
         <Link to='/projects'>Projects</Link>
-        <Link to='/apply' className='button'><FaRegHandPointRight size={24} color='white'/> Apply Now</Link>
+        <Link to='/apply' className='button'>    Apply Now <p><FaRegHandPointLeft size={24} color='white'/></p></Link>
       </div>
 
     </header>

@@ -1,0 +1,130 @@
+.pricing_section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    position: relative;
+    gap: 30px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.pricing_section .price_card {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.090) 5px 5px 16px 0px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.price_card .features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.features .feature{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.price_card .features span{
+    margin: 10px 0px ;
+}
+/* Highlight the Premium ID Card */
+.price_card.highlight {
+    border: 3px solid #007BFF !important; /* Ensures the border is applied */
+    background: #fff !important; /* Light golden background */
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.404) !important; /* Glowing effect */
+    transform: scale(1.05) !important;
+}
+
+.price_card .heading {
+    font-weight: 500;
+    color: #000;
+    font-size: 22px;
+}
+
+.price_card .price {
+    color: #007BFF;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+.price_card .sub_text {
+    color: #444;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.price_card .btn_start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.price_card .btn_start a {
+    background: linear-gradient(135deg, #2575fc, hsl(269, 85%, 43%));
+    background-size: 200% 200%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 10px 25px;
+    border-radius: 3px;
+    animation: colorShift 4s ease infinite;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button color change for Premium ID Card */
+.price_card.highlight .btn_start a {
+    background: linear-gradient(135deg, #fcb125, hsl(269, 85%, 43%));
+    background-size: 200% 200%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 10px 25px;
+    border-radius: 3px;
+    animation: colorShift-2 4s ease infinite;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+@keyframes colorShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes colorShift-2{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

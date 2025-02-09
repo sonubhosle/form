@@ -10,10 +10,11 @@
 .heading_section h2{
     font-weight: 600;
     font-size: 22px;
+    color: #007BFF;
 }
 
 .heading_section p{
-    width: 50%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;

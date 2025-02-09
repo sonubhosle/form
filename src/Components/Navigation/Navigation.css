@@ -1,93 +1,157 @@
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-   background-color: #fff;
-  transition:  width 0.3s linear,top 0.3s linear,border-radius 0.3s linear;
+  background-color: #fff;
   width: 100%;
   position: sticky;
   top: 0px;
   z-index: 1000;
-  height: 60px;
+  height: 80px;
   padding: 0px 2%;
   border-radius: 0px;
+  box-shadow: rgba(0, 0, 0, 0.072) 0px 0px 15px 0px;
 
 }
 
 
 
 .logo {
- display: flex;
- align-items: center;
- gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.logo .icon{
+.logo .icon {
   display: flex;
   align-items: center;
 }
 
-.details{
+.details {
   line-height: 23px;
+  padding-top: 8px;
 }
 
 
 
-.details .name{
+.details .name {
   color: #2D336B;
   font-weight: 800;
   font-size: 22px;
 }
 
-.details  .slogan{
+.details .slogan {
   color: #3A7D44;
   font-size: 12px;
 }
 
-.meuns a{
+.meuns a {
   color: #2D336B;
+  transition: 0.5s ease;
+  font-weight: 500;
+}
+
+
+
+.meuns a:hover {
+  color: #aa2068;
+}
+
+
+
+.meuns .button {
+  background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Initial background */
+  background-size: 400%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0px 0px 0px 15px;
+  margin-left: 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  animation: backgroundColorChange 5s infinite; 
+  background-position: 0% 50%;
+  cursor: pointer;
   transition: 0.5s ease;
 }
 
-.meuns a:hover{
-  color: #aa2068;
-}
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+/* Button Code Css */
+@keyframes backgroundColorChange {
+  0% {
+    background: linear-gradient(45deg, #e74c26, #df6000);
+    box-shadow: 5px 5px 10px 0px rgba(255, 126, 95, 0.5);
+  }
+  25% {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    box-shadow: 5px 5px 10px 0px rgba(106, 17, 203, 0.5);
+  }
+  50% {
+    background: linear-gradient(45deg, #00b4db, #0083b0);
+    box-shadow: 5px 5px 10px 0px rgba(0, 180, 219, 0.5);
+  }
+  75% {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    box-shadow: 5px 5px 10px 0px rgba(255, 106, 0, 0.5);
+  }
+  100% {
+    background: linear-gradient(45deg, #e74c26, #df6000);
+    box-shadow: 5px 5px 10px 0px rgba(255, 126, 95, 0.5);
+  }
 }
 
-.meuns .button {
-  width: fit-content;
-  display: flex;
-  padding: 8px 20px;
-  cursor: pointer;
-  gap: 0.4rem;
-  font-weight: bold;
-  border-radius: 30px;
-  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
-  background: linear-gradient(15deg, #880088, #aa2068, #cc3f47, #de6f3d, #f09f33, #de6f3d, #cc3f47, #aa2068, #880088) no-repeat;
-  background-size: 300%;
-  color: #fff;
-  border: none;
-  background-position: left center;
-  box-shadow: 0 30px 10px -20px rgba(0,0,0,.2);
-  animation: gradientAnimation 3s infinite linear;
-  align-items: center;
-}
+
+
+
+
 
 .meuns .button:hover {
-  animation: gradientAnimation 1.5s infinite linear;
+  color: #fff;
 }
 
-.meuns .button:hover svg {
-  fill: #fff;
+.meuns .button p {
+  background-color: rgba(255, 255, 255, 0.090);
+  padding: 8px 11px;
+  margin-left: 15px;
 }
 
-.meuns .button svg {
-  width: 23px;
-  fill: #f09f33;
-  transition: .3s ease;
+
+.color {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  animation: highlightGlow 3s infinite alternate;
+}
+
+
+@keyframes highlightGlow {
+  0% {
+    color: #ff9800;
+    text-shadow: 0 0 5px #ff9800;
+  }
+
+  25% {
+    color: #ff4d4d;
+    text-shadow: 0 0 8px #ff4d4d;
+  }
+
+  50% {
+    color: #4CAF50;
+    text-shadow: 0 0 10px #4CAF50;
+  }
+
+  75% {
+    color: #2196F3;
+    text-shadow: 0 0 12px #2196F3;
+  }
+
+  100% {
+    color: #9C27B0;
+    text-shadow: 0 0 15px #9C27B0;
+  }
 }

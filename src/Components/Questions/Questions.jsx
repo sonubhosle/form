@@ -6,29 +6,19 @@ import "./Questions.css";
 const Questions = () => {
   const faqs = [
     {
-      question: "What is your return policy?",
-      answer: "You can return any item within 30 days of purchase for a full refund.",
+      question: "What is the duration of the internship?",
+      answer: "The internship duration is flexible, with programs ranging from 30 to 90 days, depending on your chosen package.",
     },
     {
-      question: "How long does shipping take?",
-      answer: "Shipping usually takes 5-7 business days depending on your location.",
+      question: "Do I need prior experience?",
+      answer: "No prior experience is required. Our program is designed to cater to freshers and individuals at all skill levels.",
     },
     {
-      question: "Do you offer international shipping?",
-      answer: "Yes, we offer international shipping to selected countries.",
+      question: "Will I receive a certificate?",
+      answer: "Yes, all participants receive a certificate upon successful completion of the internship.",
     },
-    {
-      question: "What payment methods do you accept?",
-      answer: "We accept all major credit cards, PayPal, and Apple Pay.",
-    },
-    {
-      question: "How can I track my order?",
-      answer: "Once your order ships, you'll receive an email with tracking information.",
-    },
-    {
-      question: "Do you offer gift cards?",
-      answer: "Yes, we offer digital gift cards that can be used online.",
-    },
+    
+   
   ];
 
   const [openIndex, setOpenIndex] = useState(null);
