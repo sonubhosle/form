@@ -15,7 +15,7 @@ const price_data = [
         "f1": "Basic ID card"
       }
     ],
-    "path": "/"
+    "path": "/login"
   },
   {
     "id": 2,
@@ -33,7 +33,7 @@ const price_data = [
         "f1": "Certificate of completion"
       }
     ],
-    "path": "/"
+    "path": "/login"
   },
 ]
 

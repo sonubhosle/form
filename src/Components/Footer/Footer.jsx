@@ -29,17 +29,17 @@ const Footer = () => {
           <Link to='/contact'><MdChevronRight /> Career</Link>
           <Link to='/projects'><MdChevronRight /> Projects</Link>
           <Link to='/apply'><MdChevronRight /> Apply</Link>
-          <Link><MdChevronRight /> Privacy Policy</Link>
-          <Link><MdChevronRight /> Term & Conditions</Link>
+          <Link to="/privacy_policies"><MdChevronRight /> Privacy Policy</Link>
+          <Link to='/term_conditions'><MdChevronRight /> Term & Conditions</Link>
         </div>
         <div className="grid_box">
           <h2>Follow Us</h2>
           <Link><FaFacebookF className='icon' /> Facebook</Link>
           <Link><FaTwitter className='icon' /> Twitter</Link>
-          <Link><FaYoutube  className='icon' /> Youtube</Link>
-          <Link><FaLinkedinIn className='icon'  /> Linkedin</Link>
-          <Link><FaPinterestP  className='icon' /> Pinterest</Link>
-          <Link><FaGooglePlusG  className='icon' /> Pinterest</Link>
+          <Link><FaYoutube className='icon' /> Youtube</Link>
+          <Link><FaLinkedinIn className='icon' /> Linkedin</Link>
+          <Link><FaPinterestP className='icon' /> Pinterest</Link>
+          <Link><FaGooglePlusG className='icon' /> Pinterest</Link>
         </div>
         <div className="grid_box">
           <h2>Newsletter</h2>
