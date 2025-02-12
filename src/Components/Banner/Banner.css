@@ -1,39 +1,39 @@
- .banner_section {
-   width: 100%;
-   position: relative;
-   height: 400px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
+.banner_section {
+  width: 100%;
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px; /* Adding some padding for better spacing */
+}
 
- }
+.banner_section h1 {
+  color: #333;
+  font-size: 45px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  flex-direction: column;
+  text-align: center; /* Ensure heading is centered */
+}
 
- .banner_section h1 {
-   color: #333;
-   font-size: 45px;
-   line-height: 50px;
-   display: flex;
-   align-items: center;
-   font-weight: 900;
-   flex-direction: column;
+.banner_section h1 span {
+  color: #3A7D44;
+}
 
- }
+.banner_section p {
+  color: #444;
+  margin: 20px 0px;
+  text-align: center;
+  width: 55%;
+  max-width: 600px; /* Limiting the width for large screens */
+}
 
- .banner_section h1 span {
-   color: #3A7D44;
- }
-
- .banner_section p {
-   color: #444;
-   margin: 20px 0px 20px 0px;
-   text-align: center;
-   width: 55%;
- }
-
-
-
- .banner_section .button-2 {
+/* Button Styling */
+.banner_section .button-2 {
   background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Initial background */
   background-size: 400%;
   color: #fff;
@@ -52,42 +52,90 @@
   transition: 0.5s ease;
   height: 50px;
   letter-spacing: 1px;
- }
+  max-width: 200px; /* To prevent the button from becoming too wide on large screens */
+  margin: 20px 0; /* Adjust margin for better spacing */
+}
 
- /* Button Code Css */
- @keyframes backgroundColorChange {
-   0% {
-     background: linear-gradient(45deg, #e74c26, #df6000);
-     box-shadow: 5px 5px 10px 0px rgba(255, 126, 95, 0.5);
-   }
+@keyframes backgroundColorChange {
+  0% {
+    background: linear-gradient(45deg, #e74c26, #df6000);
+    box-shadow: 5px 5px 10px 0px rgba(255, 126, 95, 0.5);
+  }
 
-   25% {
-     background: linear-gradient(45deg, #6a11cb, #2575fc);
-     box-shadow: 5px 5px 10px 0px rgba(106, 17, 203, 0.5);
-   }
+  25% {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    box-shadow: 5px 5px 10px 0px rgba(106, 17, 203, 0.5);
+  }
 
-   50% {
-     background: linear-gradient(45deg, #00b4db, #0083b0);
-     box-shadow: 5px 5px 10px 0px rgba(0, 180, 219, 0.5);
-   }
+  50% {
+    background: linear-gradient(45deg, #00b4db, #0083b0);
+    box-shadow: 5px 5px 10px 0px rgba(0, 180, 219, 0.5);
+  }
 
-   75% {
-     background: linear-gradient(45deg, #ff6a00, #ee0979);
-     box-shadow: 5px 5px 10px 0px rgba(255, 106, 0, 0.5);
-   }
+  75% {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    box-shadow: 5px 5px 10px 0px rgba(255, 106, 0, 0.5);
+  }
 
-   100% {
-     background: linear-gradient(45deg, #e74c26, #df6000);
-     box-shadow: 5px 5px 10px 0px rgba(255, 126, 95, 0.5);
-   }
- }
+  100% {
+    background: linear-gradient(45deg, #e74c26, #df6000);
+    box-shadow: 5px 5px 10px 0px rgba(255, 126, 95, 0.5);
+  }
+}
 
- .banner_section .button-2 p {
-   background-color: rgba(255, 255, 255, 0.090);
-    width: 50px;
-    height: 50px;
-   margin-left: 15px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
+.banner_section .button-2 p {
+  background-color: rgba(255, 255, 255, 0.090);
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .banner_section {
+     height: 350px; /* Reduce height on smaller screens */
+  }
+
+  .banner_section h1 {
+     font-size: 30px; /* Adjust font size */
+     line-height: 35px;
+  }
+
+  .banner_section p {
+     width: 80%; /* Allow more width for the paragraph */
+     font-size: 14px; /* Smaller font size for smaller screens */
+  }
+
+  .banner_section .button-2 {
+     font-size: 14px; /* Adjust button text size */
+     padding: 0 10px;
+     height: 45px; /* Adjust button height */
+     max-width: 180px; /* Adjust max-width of the button */
+  }
+}
+
+@media (max-width: 480px) {
+  .banner_section {
+     height: 300px; /* Further reduce height on extra small screens */
+  }
+
+  .banner_section h1 {
+     font-size: 25px; /* Further reduce font size */
+     line-height: 30px;
+  }
+
+  .banner_section p {
+     width: 90%; /* Make paragraph width more flexible */
+     font-size: 12px; /* Even smaller font size */
+  }
+
+  .banner_section .button-2 {
+     font-size: 12px; /* Small button text size */
+     padding: 0 8px;
+     height: 40px; /* Small button height */
+     max-width: 160px; /* Small button max-width */
+  }
+}
