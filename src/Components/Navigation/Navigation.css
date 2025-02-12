@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between !important;
   align-items: center;
   background-color: #fff;
   width: 100%;
@@ -39,7 +39,12 @@
   color: #3A7D44;
   font-size: 12px;
 }
-
+.meuns{
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
 .meuns a {
   color: #2D336B;
   transition: 0.5s ease;
@@ -138,74 +143,48 @@
     text-shadow: 0 0 15px #9C27B0;
   }
 }
+/* Hamburger and Close Icon Styling */
+.hamburger-menu {
+  display: none; /* Initially hidden on desktop */
+  cursor: pointer;
+}
 
-/* Mobile-First Responsive Styles */
-@media (max-width: 768px) {
-  .navbar {
-    height: 70px; /* Adjust navbar height for smaller screens */
-    background-color: #2196F3;
-  }
+.hamburger-menu.active {
+  display: block; /* Display hamburger when the menu is open */
+}
 
-  .logo .details .name {
-    font-size: 18px; /* Adjust the size of the name */
-  }
-
-  .logo .details .slogan {
-    font-size: 10px; /* Adjust the size of the slogan */
+/* Adjust for smaller screens */
+@media (max-width: 991px) {
+  .hamburger-menu {
+    display: block; /* Show hamburger on small screens */
   }
 
   .meuns {
-    display: none; /* Hide the menu links on smaller screens */
-    flex-direction: column; /* Stack the menu items vertically */
+    display: none;
+    align-items: flex-start; /* Align items to the left */
+    flex-direction: column;
     gap: 15px;
     width: 100%;
+    justify-content: flex-start; /* Align items to the top (vertically) */
     position: absolute;
-    top: 80px; /* Place the menu below the navbar */
+    top: 80px; /* Position menu below navbar */
     left: 0;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px;
     padding: 20px;
   }
+  
 
-  .meuns a {
-    font-size: 16px;
+  /* Show the menu when it's toggled */
+  .meuns.show-menu {
+    display: flex !important;
   }
 
-  /* Make the button a bit smaller for smaller screens */
-  .meuns .button {
-    font-size: 14px;
-    padding: 0 10px;
-    height: 40px;
+  .hamburger-menu .menu_icon {
+    color: #333;
   }
 
-  /* Add a hamburger menu */
-  .hamburger-menu {
-    display: block; /* Show hamburger on small screens */
-    cursor: pointer;
-    position: absolute;
+  .hamburger-menu .close_icon {
+    color: #333;
   }
-
-  .hamburger-menu div {
-    width: 25px;
-    height: 3px;
-    margin: 5px;
-    background-color: #333;
-    border-radius: 5px;
-  }
-}
-
-@media (max-width: 480px) {
-  .meuns a {
-    font-size: 14px; /* Further reduce font size */
-  }
-}
-
-/* For when the menu is toggled */
-.show-menu {
-  display: flex !important;
-}
-
-/* Added styles for the active/hamburger icon when menu is open */
-.hamburger-menu.active div {
-  background-color: #fff;
 }
