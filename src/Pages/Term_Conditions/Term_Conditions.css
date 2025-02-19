@@ -1,0 +1,106 @@
+/* General Styles */
+.terms-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Section Styling */
+.term-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.term-section:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(0, 123, 255, 0.164) 5px 5px 15px 0px;
+}
+
+/* Headings */
+.term-title {
+    font-size: 20px;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.term-desc {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.term-desc a{
+    color: #007bff;
+}
+
+.sub-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* List Styling */
+.term-list {
+    padding-left: 20px;
+}
+
+.term-list li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    list-style: circle; /* Added circle bullets */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .terms-container {
+        padding: 10px;
+    }
+
+    .term-title {
+        font-size: 18px;
+    }
+
+    .term-desc {
+        font-size: 14px;
+    }
+
+    .sub-heading {
+        font-size: 16px;
+    }
+
+    .term-list li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .term-section {
+        padding: 10px;
+    }
+
+    .term-title {
+        font-size: 16px;
+    }
+
+    .term-desc {
+        font-size: 13px;
+    }
+
+    .sub-heading {
+        font-size: 15px;
+    }
+
+    .term-list li {
+        font-size: 13px;
+        list-style: circle;
+    }
+}
