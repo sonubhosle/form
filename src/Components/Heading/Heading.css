@@ -21,3 +21,20 @@
     text-align: center;
     margin: 10px 0px;
 }
+
+
+@media(max-width:350px){
+
+    .heading_section{
+        margin-top: 30px;
+    }
+    .heading_section h2{
+        font-weight: 600;
+        font-size: 22px;
+        color: #007BFF;
+        text-align: center
+    }
+    .heading_section p{
+        width: 90%;
+    }
+}

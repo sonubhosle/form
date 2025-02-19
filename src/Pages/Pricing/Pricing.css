@@ -128,3 +128,10 @@
         background-position: 0% 50%;
     }
 }
+@media(max-width:350px){
+    .pricing_section{
+        width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    }
+}

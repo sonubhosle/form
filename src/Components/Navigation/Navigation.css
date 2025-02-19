@@ -155,6 +155,9 @@
 
 /* Adjust for smaller screens */
 @media (max-width: 991px) {
+  .color{
+    padding: 0px;
+  }
   .hamburger-menu {
     display: block; /* Show hamburger on small screens */
   }
@@ -167,17 +170,24 @@
     width: 100%;
     justify-content: flex-start; /* Align items to the top (vertically) */
     position: absolute;
-    top: 80px; /* Position menu below navbar */
+    top: 100px; /* Position menu below navbar */
     left: 0;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px;
+    opacity: 0;
     padding: 20px;
+    visibility: hidden;
+
+    transition: 0.5s ease;
   }
   
 
   /* Show the menu when it's toggled */
   .meuns.show-menu {
     display: flex !important;
+    visibility: visible;
+    opacity: 9;
+    top: 81px;
   }
 
   .hamburger-menu .menu_icon {
@@ -186,5 +196,10 @@
 
   .hamburger-menu .close_icon {
     color: #333;
+  }
+
+  .meuns .button{
+    margin-left: 0px;
+
   }
 }

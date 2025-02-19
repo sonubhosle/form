@@ -59,3 +59,23 @@
     text-align: center;
     margin: 20px 0px;
 }
+
+@media(max-width:350px){
+    .button_grid{
+
+        width: 95%;
+    }
+    
+    .button_grid a{
+       width: 100%;
+    }
+    .apply .grid_box{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        gap: 20px;
+        position: relative;
+        width: 95%;
+        margin: 30px auto;
+    }
+    
+}

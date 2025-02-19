@@ -67,3 +67,16 @@
         background-position: 0% 50%;
     }
 }
+
+
+@media(max-width:450px){
+    .dev_section{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        gap: 20px;
+        position: relative;
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+}

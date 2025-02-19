@@ -33,3 +33,9 @@
     margin: 0;
     padding: 10px;
 }
+
+@media(max-width:768px){
+    .width {
+        width: 90%;
+    }
+}
