@@ -7,12 +7,14 @@
   justify-content: center;
   flex-direction: column;
   padding: 20px; /* Adding some padding for better spacing */
+  background-image: url('https://t3.ftcdn.net/jpg/03/99/09/66/360_F_399096694_rI4J6yHpEaijvG36k8ybRFrqKpKp6pOn.jpg');
 }
 
 .banner_section h1 {
-  color: #333;
+  color: #fff;
   font-size: 45px;
   line-height: 50px;
+  letter-spacing: 1px;
   display: flex;
   align-items: center;
   font-weight: 900;
@@ -20,15 +22,13 @@
   text-align: center; /* Ensure heading is centered */
 }
 
-.banner_section h1 span {
-  color: #3A7D44;
-}
+
 
 .banner_section p {
-  color: #444;
+  color: #f8f8f8;
   margin: 20px 0px;
   text-align: center;
-  width: 55%;
+  width: 70%;
   max-width: 600px; /* Limiting the width for large screens */
 }
 
@@ -119,8 +119,8 @@
 
 @media (max-width: 480px) {
   .banner_section {
-     height: 300px; 
-     margin-top: 40px;
+     height: 360px; 
+    padding-top: 30px;
   }
 
   .banner_section h1 {

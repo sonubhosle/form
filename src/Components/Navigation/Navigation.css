@@ -16,7 +16,7 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  
 }
 
 .logo .icon {
@@ -24,10 +24,6 @@
   align-items: center;
 }
 
-.details {
-  line-height: 23px;
-  padding-top: 8px;
-}
 
 .details .name {
   color: #2D336B;
@@ -153,6 +149,10 @@
   display: block; /* Display hamburger when the menu is open */
 }
 
+.hamburger-menu .close_icon{
+  display: none;
+}
+
 /* Adjust for smaller screens */
 @media (max-width: 991px) {
   .color{
@@ -196,6 +196,7 @@
 
   .hamburger-menu .close_icon {
     color: #333;
+    display: flex;
   }
 
   .meuns .button{

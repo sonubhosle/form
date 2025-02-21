@@ -6,49 +6,49 @@ import { Link } from 'react-router-dom'
 const projects = [
   {
     "id":1,
-    "img":"",
+    "img":"https://www.thedevelopersarena.com/assets/images/ecommerce.png",
     "name":"E-commerce Websites",
     "desc":"Complete solutions for online shopping with cart, payment, and inventory management."
   },
   {
     "id":2,
-    "img":"",
+    "img":"https://www.thedevelopersarena.com/assets/images/professional.png",
     "name":"Professional Websites",
     "desc":"Showcase your business or portfolio with sleek, modern designs."
   },
   {
     "id":3,
-    "img":"",
+    "img":"https://www.thedevelopersarena.com/assets/images/blog.png",
     "name":"Blog Websites",
     "desc":"Share your ideas with the world using feature-rich, SEO-friendly blogs."
   },
   {
     "id":4,
-    "img":"",
+    "img":"https://www.thedevelopersarena.com/assets/images/responsive.png",
     "name":"Responsive Web Applications",
     "desc":"Seamless experiences across all devices and screen sizes."
   },
   {
     "id":5,
-    "img":"",
+    "img":"https://www.thedevelopersarena.com/assets/images/modern.png",
     "name":"Modern UI Development",
     "desc":"Interactive, user-friendly designs with smooth user experiences."
   },
   {
     "id":6,
-    "img":"",
+    "img":"https://www.thedevelopersarena.com/assets/images/restfullapi.png",
     "name":"RESTful APIs & Microservices",
     "desc":"Scalable and efficient backend solutions."
   },
   {
     "id":7,
-    "img":"",
+    "img":"https://www.thedevelopersarena.com/assets/images/payment.png",
     "name":"We will teach interns how to integrate Payment Gateway Integration",
     "desc":""
   },
   {
     "id":8,
-    "img":"",
+    "img":"https://www.thedevelopersarena.com/assets/images/mobile.png",
     "name":"Mobile Applications",
     "desc":"Cutting-edge Android and iOS apps to expand your reach."
   },
@@ -63,7 +63,9 @@ const Projects = () => {
             projects.map((product,indx) =>{
               return(
                 <div className="product_card" key={indx}>
-                  <div className="poster"></div>
+                  <div className="poster">
+                    <img src={product.img} alt={product.name} />
+                  </div>
                   <div className="name">{product.name}</div>
                   <div className="info">{product.desc}</div>
                 </div>

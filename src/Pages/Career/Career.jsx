@@ -34,7 +34,7 @@ const Career = () => {
        </div>
        <Heading heading={'Current Openings'}  subtitle={'Don’t see a role that fits? We’re always interested in meeting talented individuals.'}/>
        <div className="btn_start">
-          <Link>Apply For Future Opportunities </Link>
+          <Link to='/apply'>Apply For Future Opportunities </Link>
          </div>
     </div>
   )

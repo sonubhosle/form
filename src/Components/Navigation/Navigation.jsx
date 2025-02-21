@@ -21,26 +21,25 @@ const Navigation = () => {
         <div className="icon"><PiStudentBold color='#2D336B' size={50} /></div>
         <div className="details">
           <div className="name">SKY BRICKS</div>
-          <div className="slogan">Think Develop Achieve</div>
         </div>
       </Link>
 
       {/* Menu Links - These will show only if the menu is open */}
       <div className={`meuns ${menuOpen ? 'show-menu' : ''} flex items-center gap-20`}>
-        <Link to='/'>Home</Link>
-        <Link to='/about'>About</Link>
-        <Link to='/contact'>Contact</Link>
-        <Link to="/pricing" className='color'>Pricing</Link>
-        <Link to='/career'>Career</Link>
-        <Link to='/projects'>Projects</Link>
-        <Link to='/apply' className='button'>
+        <Link to='/' onClick={toggleMenu}>Home</Link>
+        <Link to='/about' onClick={toggleMenu}>About</Link>
+        <Link to='/contact' onClick={toggleMenu}>Contact</Link>
+        <Link to="/pricing" className='color' onClick={toggleMenu}>Pricing</Link>
+        <Link to='/career' onClick={toggleMenu}>Career</Link>
+        <Link to='/projects' onClick={toggleMenu}>Projects</Link>
+        <Link to='/apply' className='button' onClick={toggleMenu}>
           Apply Now <p><FaRegHandPointLeft size={24} color='white' /></p>
         </Link>
       </div>
 
       {/* Hamburger Icon - This shows when the menu is closed */}
       <div className={`hamburger-menu ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
-        {!menuOpen ? <IoMenu className='menu_icon' size={30}/> : <IoClose className='close_icon' size={30}/>}
+        {!menuOpen ? <IoMenu className='menu_icon' size={30}/> : <IoClose  className='close_icon' size={30}/>}
       </div>
     </header>
   );
