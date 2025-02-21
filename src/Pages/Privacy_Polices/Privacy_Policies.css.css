@@ -1,89 +1,15 @@
-/* Base Styles */
-.privacy_details {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+.privacy_details{
+  width: 80%;
+  margin: 20px auto;
 }
 
-/* Heading Styles */
-.privacy_details h1 {
-    color: #333;
-    font-weight: bold;
-    font-size: 24px;
-    margin-top: 20px;
+.privacy_details h1{
+    color: royalblue;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 20px 0px;
 }
 
-/* Paragraph and Span Text */
-.privacy_details span {
-    color: #666;
-    font-size: 16px;
-    display: block;
-    margin-bottom: 15px;
-}
-
-/* List Styling */
-.details {
-    padding-left: 20px;
-}
-
-.details li {
-    list-style-type: disc;
-    font-weight: bold;
-    margin-top: 10px;
-    color: #222;
-    display: flex;
-    align-items: center;
-}
-
-.details li p {
-    font-weight: normal;
-    color: #444;
-    margin-left: 15px;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .privacy_details {
-        padding: 15px;
-    }
-    
-    .privacy_details h1 {
-        font-size: 22px;
-    }
-    
-    .privacy_details span {
-        font-size: 15px;
-    }
-    
-    .details li {
-        font-size: 16px;
-    }
-    
-    .details li p {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .privacy_details {
-        padding: 10px;
-    }
-
-    .privacy_details h1 {
-        font-size: 20px;
-    }
-
-    .privacy_details span {
-        font-size: 14px;
-    }
-
-    .details li {
-        font-size: 14px;
-    }
-
-    .details li p {
-        font-size: 13px;
-    }
+.privacy_details span{
+    color: #808080;
 }

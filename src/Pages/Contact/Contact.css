@@ -133,9 +133,17 @@ form {
   }
 
   @media(max-width:768px){
-  
+
     .form_group {
       display: flex;
      flex-direction: column;
     }
+  }
+
+  
+  @media(max-width:576px){
+     .contact-form{
+      margin-top: 100px;
+     }
+
   }
