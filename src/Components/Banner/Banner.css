@@ -29,7 +29,7 @@
   margin: 20px 0px;
   text-align: center;
   width: 70%;
-  max-width: 600px; /* Limiting the width for large screens */
+  /* Limiting the width for large screens */
 }
 
 /* Button Styling */

@@ -1,19 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Navigation.css';
 import { Link } from 'react-router-dom';
 import { PiStudentBold } from "react-icons/pi";
-import { FaRegHandPointLeft } from "react-icons/fa";
-import { IoMenu } from "react-icons/io5";
-import { IoClose } from "react-icons/io5";
+import { IoMenu, IoClose } from "react-icons/io5";
 
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-
   const toggleMenu = () => {
-    setMenuOpen(prev => !prev);
+    setMenuOpen((prev) => !prev);
   };
-
 
   return (
     <header className='navbar'>
@@ -24,22 +20,23 @@ const Navigation = () => {
         </div>
       </Link>
 
-      {/* Menu Links - These will show only if the menu is open */}
-      <div className={`meuns ${menuOpen ? 'show-menu' : ''} flex items-center gap-20`}>
+      {/* Menu Links */}
+      <div className={`meuns ${menuOpen ? 'show-menu' : ''}`}>
         <Link to='/' onClick={toggleMenu}>Home</Link>
+        <Link to='/projects' onClick={toggleMenu}>Projects</Link>
+        <Link to='/students/freshers' onClick={toggleMenu}>Students & Freshers</Link>
+        <Link to='/career' onClick={toggleMenu}>Career</Link>
+        <Link to="/pricing" className='color' onClick={toggleMenu}>Pricing</Link>
+        <Link to='/apply' onClick={toggleMenu}>Apply</Link>
         <Link to='/about' onClick={toggleMenu}>About</Link>
         <Link to='/contact' onClick={toggleMenu}>Contact</Link>
-        <Link to="/pricing" className='color' onClick={toggleMenu}>Pricing</Link>
-        <Link to='/career' onClick={toggleMenu}>Career</Link>
-        <Link to='/projects' onClick={toggleMenu}>Projects</Link>
-        <Link to='/apply' className='button' onClick={toggleMenu}>
-          Apply Now <p><FaRegHandPointLeft size={24} color='white' /></p>
-        </Link>
+        <Link to='/privacy_policies' className='hide' onClick={toggleMenu}>Privacy Policy</Link>
+        <Link to='/term_conditions' className='hide' onClick={toggleMenu}>Terms & Conditions</Link>
       </div>
 
-      {/* Hamburger Icon - This shows when the menu is closed */}
-      <div className={`hamburger-menu ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
-        {!menuOpen ? <IoMenu className='menu_icon' size={30}/> : <IoClose  className='close_icon' size={30}/>}
+      {/* Hamburger Icon */}
+      <div className="hamburger-menu" onClick={toggleMenu}>
+        {menuOpen ? <IoMenu className='close_icon' size={30} /> : <IoMenu className='menu_icon' size={30} />}
       </div>
     </header>
   );

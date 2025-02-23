@@ -117,7 +117,7 @@ const Term_Conditions = () => {
             <div className="term-section">
                 <h2 className="term-title">14. Contact Information</h2>
                 <p className="term-desc">
-                    For any queries regarding the Terms and Conditions, contact us at <a href="mailto:support@example.com">support@example.com</a>.
+                    For any queries regarding the Terms and Conditions, contact us at <a href="mailto:support@example.com">govindbhokare007@gmail.com</a>.
                 </p>
             </div>
         </div>
