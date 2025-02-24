@@ -12,10 +12,10 @@
     background-color: #fff;
     box-shadow: rgba(0, 8, 8, 0.055) 5px 5px 10px 0px;
     border: 1px solid #dbdbdb;
-    padding: 10px;
     border-radius: 4px;
     cursor: pointer;
     transition: 0.5s ease;
+    padding: 5px;
 }
 
 .products_grid .product_card:hover{
@@ -30,6 +30,7 @@
     background-color: #f0f0f0;
     border-radius: 4px;
     position: relative;
+    overflow: hidden;
 
 }
 .product_card .poster img{
@@ -80,13 +81,23 @@
     }
 }
 
-
+@media(max-width:768px){
+  
+    .products_grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        gap: 20px;
+        position: relative;
+        width: 90%;
+        margin: 30px auto 50px auto;
+    }
+  }
 
 @media(max-width:350px){
   
     .products_grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 20px;
         position: relative;
         width: 90%;
