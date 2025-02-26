@@ -8,7 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  height: 80px;
+  height: 100px;
   padding: 0 2%;
   box-shadow: rgba(0, 0, 0, 0.072) 0px 0px 15px 0px;
 }
@@ -17,15 +17,18 @@
 .logo {
   display: flex;
   align-items: center;
+  gap: 10px;
   text-decoration: none;
 }
 
-.logo .icon {
-  display: flex;
-  align-items: center;
+.logo img{
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+
 }
 
-.details .name {
+.logo .name {
   color: #2D336B;
   font-weight: 800;
   font-size: 22px;

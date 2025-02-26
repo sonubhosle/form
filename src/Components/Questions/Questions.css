@@ -1,14 +1,11 @@
-.width {
-    background-color: #fff;
-    width: 100%;
+.fq-container{
+    width: 80%;
     margin: 30px auto;
-    border: 1px solid #dbdbdb;
-    border-radius: 4px;
 }
-
 .faq-item {
     border-bottom: 1px solid #dbdbdb;
     width: 100%;
+    background-color: #ffffff;
 }
 
 .faq-question {
@@ -16,10 +13,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
-    font-size: 17px;
+    font-size: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
     width: 100%;
+    background-color: #ffffff;
 }
 
 
@@ -29,9 +27,10 @@
 
 .faq-answer p {
     color: #555;
-    font-size: 1rem;
+    font-size: 18px;
     margin: 0;
     padding: 10px;
+
 }
 
 @media(max-width:768px){

@@ -20,6 +20,7 @@
     justify-content: center;
     text-align: center;
     margin: 10px 0px;
+    font-size: 20px;
 }
 
 @media(max-width:768px){
@@ -27,6 +28,10 @@
         width:80%;
         margin: 0px auto;
         text-align: center;
+    }
+    .heading_section p{
+
+        font-size: 16px;
     }
 }
 
@@ -44,5 +49,6 @@
     }
     .heading_section p{
         width: 90%;
+
     }
 }

@@ -28,8 +28,8 @@ const Questions = () => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-6 width">
-      <div className="space-y-4">
+    <div className="fq-container">
+
         {faqs.map((faq, index) => (
           <div key={index} className="faq-item">
             <div className="faq-question" onClick={() => toggleFAQ(index)}>
@@ -46,7 +46,6 @@ const Questions = () => {
             </motion.div>
           </div>
         ))}
-      </div>
     </div>
   );
 };

@@ -14,10 +14,9 @@ const Navigation = () => {
   return (
     <header className='navbar'>
       <Link className="logo">
-        <div className="icon"><PiStudentBold color='#2D336B' size={50} /></div>
-        <div className="details">
-          <div className="name">SKY BRICKS</div>
-        </div>
+            <img src="https://i.postimg.cc/d0Jc0sFF/LOGO.jpg" alt="" />
+          <div className="name">THE SKYBRISK</div>
+
       </Link>
 
       {/* Menu Links */}
@@ -30,8 +29,8 @@ const Navigation = () => {
         <Link to='/apply' onClick={toggleMenu}>Apply</Link>
         <Link to='/about' onClick={toggleMenu}>About</Link>
         <Link to='/contact' onClick={toggleMenu}>Contact</Link>
-        <Link to='/privacy_policies' className='hide' onClick={toggleMenu}>Privacy Policy</Link>
-        <Link to='/term_conditions' className='hide' onClick={toggleMenu}>Terms & Conditions</Link>
+        <Link to='/privacy_policies'  onClick={toggleMenu}>Privacy Policy</Link>
+        <Link to='/term_conditions'  onClick={toggleMenu}>Terms & Conditions</Link>
       </div>
 
       {/* Hamburger Icon */}
